@@ -1,0 +1,172 @@
+.links {
+  display: flex;
+  background-color: rgb(114, 45, 224);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  padding-left: 20px;
+}
+
+h2,
+a {
+  color: black;
+  text-decoration: none;
+  padding-top: 14px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.left {
+  margin-top: 20px;
+  width: 40%;
+  padding: 10px;
+}
+
+.right {
+  margin-top: 20px;
+  width: 60%;
+  padding: 10px;
+  overflow-x: auto;
+
+}
+/* #tableCompra {
+  word-wrap: break-word;
+  overflow: hidden;
+} */
+
+.inputLeft {
+  margin-top: 20px;
+  width: 55%;
+  padding: 10px;
+}
+
+.inputRight {
+  margin-top: 20px;
+  width: 25%;
+  padding: 10px;
+}
+
+.principal {
+  display: flex;
+}
+
+.buttonPrincipal {
+  width: 100%;
+  background-color: rgb(114, 45, 224);
+}
+
+.button1 {
+  width: 20%;
+  background-color: rgb(190, 190, 190);
+  padding-right: 30px;
+  right: auto;
+}
+
+.button2 {
+  width: 20%;
+  background-color: rgb(114, 45, 224);
+}
+
+button {
+  cursor: pointer;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+#linha-vertical {
+  margin-top: 35px;
+  height: 390px;
+  border-right: 1px solid rgb(165, 165, 165);
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+#tableCompra>tbody {
+  word-wrap: break-word;
+}
+td {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border-right: 1px solid #dddddd;
+   word-wrap:break-word;
+}
+
+.final {
+  text-align: right;
+}
+
+.tax,
+.total {
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.price {
+  padding-top: 20px;
+  right: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 10px;
+}
+
+.history {
+  padding: 30px;
+}
+
+.compra {
+  padding: 30px;
+}

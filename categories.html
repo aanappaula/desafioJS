@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="8" />
+    <link rel="stylesheet" href="style.css" />
+    <div class="links">
+      <h1>Suite Store</h1>
+      <h2><a href="home.html"> Home</a></h2>
+      <h2><a href="products.html"> Products</a></h2>
+      <h2><a href="categories.html">Categories</a></h2>
+      <h2><a href="history.html">History</a></h2>
+    </div>
+  </header>
+  <div class="principal">
+    <form id="form" class="left">
+      <div class="container-category">
+        <div>
+          <input
+            class="grid-item-input"
+            type="text"
+            id="nome"
+            name="categoryName"
+            placeholder="Category name"
+            required
+          />
+        </div>
+        <div>
+          <input
+            class="grid-item-input"
+            type="number"
+            id="tax"
+            name="tax"
+            placeholder="Tax"
+            onkeypress="return event.charCode >= 48"
+            min="1"
+            required
+          />
+        </div>
+      </div>
+      <button id="salvar" class="buttonPrincipal" type="button">
+        Add Product
+      </button>
+    </form>
+    <div id="linha-vertical"></div>
+    <div class="right">
+      <table id="tableCategory">
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Category</th>
+            <th>Tax</th>
+          </tr>
+        </thead>
+        <tbody style="word-break: break-word;"></tbody>
+      </table>
+    </div>
+    <script src="categories.js"></script>
+  </div>
+</html>

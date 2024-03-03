@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="8" />
+    <link rel="stylesheet" href="style.css" />
+
+    <div class="links">
+      <h1>Suite Store</h1>
+      <h2><a href="home.html"> Home</a></h2>
+      <h2><a href="products.html"> Products</a></h2>
+      <h2><a href="categories.html">Categories</a></h2>
+      <h2><a href="history.html">History</a></h2>
+    </div>
+  </header>
+  <body>
+    <div class="principal">
+      <form id="form" class="left">
+        <select
+          id="selectProducts"
+          placeholder="Products"
+          name="product"
+        ></select>
+        <div class="container">
+          <div>
+            <input
+              class="grid-item-input"
+              type="number"
+              id="amount"
+              name="amount"
+              placeholder="Amount"
+              onkeypress="return event.charCode >= 48"
+              min="0"
+            />
+          </div>
+          <div>
+            <input
+              readonly
+              class="grid-iteminput"
+              type="text"
+              id="taxValue"
+              name="taxValue"
+              placeholder="Tax Value"
+            />
+          </div>
+          <div>
+            <input
+              readonly
+              class="grid-iteminput"
+              type="text"
+              id="unitPrice"
+              name="unitPrice"
+              placeholder="Unit Price"
+            />
+          </div>
+        </div>
+        <button id="salvar" class="buttonPrincipal add-item" type="button">
+          Add Product
+        </button>
+      </form>
+
+      <div id="linha-vertical"></div>
+      <div class="right">
+        <table class="tableCompra" id="tableCompra">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Tax</th>
+              <th>Amount</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody style="word-break: break-word;"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="final">
+      <div id="divCompra">
+        <p id="totalTax"></p>
+        <p id="totalPrice"></p>
+        <button id="cancel" class="button1 add-item" type="button">
+          Cancel
+        </button>
+        <button id="finish" class="button2 add-item" type="button">
+          Finish
+        </button>
+      </div>
+    </div>
+    <script src="home.js">
+    </script>
+  </body>
+</html>
